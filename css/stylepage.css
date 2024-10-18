@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, nav, main, footer{
+    /*width: 960px;*/
+    width: 100%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Playwrite DE Grund", cursive;
+    }
+
+header{
+    height: 50px;
+    background-color: #FCB9AA;
+    color: #55CBCD;
+    text-align: center;
+    height: auto;
+  
+}
+
+nav {
+    background-color: #FFDBCC;
+    color: #FCB9AA;
+    text-align: center;
+}
+
+li{
+    width: 65px;
+    background-color: #A2E1DB;
+    color: #FCB9AA;
+    padding: 15px;
+    text-align: center;
+    border-style:groove;
+}
+
+ul, li{
+    width: 100%;
+    padding: 10px;
+    text-align:center;
+    border-color: white;
+    display: flex;
+}
+nav ul li a, nav ul li a:visited, nav ul li a:link{
+    color: #855E6E;
+    text-decoration: none;
+}
+
+.navItems {
+    padding: 15px;
+    display:inline-flex;
+    border-color: #A2E1DB;
+}
+
+a{
+    text-decoration: none;
+     color: #55CBCD;
+}
+main nav{
+    color:#855e6e;
+    background-color:transparent;
+}
+nav ul li:hover{
+            background-color: #FFB2C1;
+            width: 90px;
+}
+nav ul li a:hover{
+            color: #855E6E;
+            font-weight: bold;
+}
+
+section {
+    width: 80%;
+    height: auto;
+    background-color: #FFDBCC;
+    color: #855e6e;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+main{
+    background-color: #ECEAE4;
+    color: #FCB9AA;
+    height: auto;
+    
+}
+
+footer{
+    background-color: #A2E1DB;
+    color: #855e6e;
+    text-align: center;
+    height: auto;
+
+}
+img{
+    width: 650px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+   
+}
+h1{
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+}
+h2{
+    color: #CBAACB;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: 
+}
+p{
+    color: #855E6E;
+    text-align: left;
+    font-family: "Playwrite DE Grund", cursive;
+}
+#papel_periodico{
+    width: 300px;
+    float: right;
+    margin-left: 15px;
+}
+#plantas_vintage{
+    width: 300px;
+    float: left;
+    margin-right: 15px;
+}
+main, nav{
+    padding: 30px;
+    text-align: center
+}
+#icono{
+    width: 32px;
+    height: auto
+}
+
+#fondo_section{
+    background-image: url("../imagenes/fotocuatro.jpg");
+    backround-repeat: no-repeat;
+    background-size:150%;
+}
+#fondo_section p, #fondo_section h2{
+    color: #f7f1e1;
+}
+#filtros_imagen{
+    text-align: center;
+}
+#filtros_imagen img{
+    display: inline-block;
+    width: 25%;
+    height: auto;
+    padding: 10px; 
+}
+#img1{
+    filter: brightness(200%);
+}
+#img2{
+    filter: contrast(50%);
+}
+#img3{
+    filter: grayscale(100%);
+}
+#img4{
+    filter: invert(100%);
+}
+#img5{
+    filter: opacity(7%);
+}
+#img6{
+    filter: sepia(100%);
+}
+#img7{
+    filter: saturate(150%);
+}
+#img8{
+    filter: blur(3px);
+}
+#img9{
+    filter: drop-shadow(5px 10px 10px pink )
+}
+#img10{
+    filter: contrast(50%)blur(3px);
+}
+#img11{
+    filter: hue-rotate(90deg);
+}
+#iframe{
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+

@@ -1,0 +1,413 @@
+<html>
+    <head>
+        <title>Tablas</title>
+        <link rel="stylesheet" href="../css/stylepage.css" type="text/css"> 
+        <style type="text/css">
+            p{
+                margin-bottom: 20px;
+            }
+            
+            #tabla_uno{
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+                color: #855E6E;
+                border-style: solid;
+                border-color: rosybrown;
+                border-width: 5px;
+
+            }
+            #tabla_uno th{
+                background-color: #FFB2C1;
+            }
+            #tabla_uno td{
+                background-color: #FFDBD7;
+                text-align: left;
+                border-radius: 5px;
+                margin: 5px;
+                border-style: solid;
+                border-color: antiquewhite;
+                border-width: 3px;
+            
+            }
+           /* #tabla_2 td{
+                color:violet;
+                height: 50px;
+                padding: 5px;
+            }
+            #tabla_2 th{
+                color: blueviolet;
+            }*/
+            .tabla_dos{
+                width: 600px;
+                border-collapse: collapse;
+                border-color: #855E6E;
+                border-style:solid;
+                margin: 0 auto;
+            }
+            .tabla_dos th{
+                background-color: #FFB2C1;
+            }
+            .tabla_dos td{
+                background-color: #FFDBD7;
+            }
+            .tabla_dos td, .tabla_dos th{
+                width: 150px;
+                border-color: #855E6E;
+                padding: 10px;
+                border-style:dashed;
+            }
+            .celda_centrada{
+                text-align: center;
+                padding: 0px;
+                background-color:floralwhite;
+            }
+            #tabla_zebra{
+                width: 100%;
+                border-style:ridge;
+                border-color: palevioletred;
+                padding: 2px;
+                color:darkmagenta
+                
+            }
+            #tabla_zebra tbody tr:nth-child(even){
+                background-color: floralwhite;
+            }
+            #tabla_zebra tbody tr:nth-child(odd){
+                background-color: #FFDBD7;
+            }
+            #tabla_zebra thead tr{
+                background-color:#FFB2C1;
+                border-color: palevioletred;
+            }
+            #tabla_zebra th, #tabla_zebra td{
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+            .tabla_hover{
+                margin-right: auto;
+                margin-left: auto;
+                width: 80%;
+                border-style:ridge;
+                border-color: palevioletred;
+                padding: 2px;
+                color:darkmagenta
+            }
+            .tabla_hover tbody {
+                background-color:#FFDBD7;
+            }
+            .tabla_hover thead{
+                background-color: palevioletred;
+                 color: black;
+            }
+            .tabla_hover tr:hover{
+                background-color: floralwhite;
+            }
+            .tabla_hover td{
+                text-align: left;
+                border-radius: 5px;
+                margin: 5px;
+                border-width: 3px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+        <h1>TABLAS EN HTML</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a> </li>
+                <li><a href="listasd.html">Listas</a></li>
+                <li><a href="Enlacesd.html">Enlaces</a></li>
+                <li><a href="tablasd.html">Tablas</a></li>
+                <li><a href="imagenesd.html">Imágenes</a></li>
+                <li><a href="audiod.html">Audio</a></li>
+                <li><a href="videod.html">Video</a></li>
+                <li><a href="formulariosd.html">Formulario</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section style="overflow-x: auto">
+                
+                <h2>Familia</h2>
+                <p>La familia es un grupo de personas con las que compartes un vínculo de sangre, matrimonio o adopción y que viven juntos o en cercanía. La familia es importante porque ayuda a sus miembros a desarrollarse de manera emocional y socialmente y también a transmitir valores y normas de una generación a otra.</p>
+                <table border="1" id="tabla_uno">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Parentesco</th>
+                            <th>Estudia</th>
+                            <th>Trabaja</th>
+                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Daniel</td>
+                            <td>49</td>
+                            <td>Padre</td>
+                            <td>No</td>
+                            <td>Si</td>
+                        </tr>
+                        <tr>
+                            <td>Maria</td>
+                            <td>47</td>
+                            <td>Madre</td>
+                            <td>No</td>
+                            <td>Si</td>
+                        </tr>
+                        <tr>
+                            <td>Héctor</td>
+                            <td>25</td>
+                            <td>Hermano</td>
+                            <td>No</td>
+                            <td>Si</td>
+                        </tr>
+                        <tr>
+                            <td>Susana</td>
+                            <td>23</td>
+                            <td>Hermana</td>
+                            <td>No</td>
+                            <td>Si</td>
+                        </tr>
+                        <tr>
+                            <td>Rodrigo</td>
+                            <td>19</td>
+                            <td>Hermano</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                        </tr>
+                        <tr>
+                            <td>Fernanda</td>
+                            <td>21</td>
+                            <td>Prima</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                        </tr>
+                        
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            
+            <section style="overflow-x: auto">
+               <h2>Amigos</h2>
+                <p>Personas con las que se mantiene una amistad. Una amistad es una relación afectiva entre dos o más personas, construida sobre la base de la reciprocidad y el trato asuido. Valores fundamentales en una amistad son lealtad, amor, solidaridad, incondicionalidad, sinceridad y compromiso. El amigo está ahí para escucharnos y consolarnos en momentos de dificultad y para celebrar nuestros éxitos y alegrías. Su lealtad y sinceridad generan una confianza que nos permite ser nosotrosmismos sin miedo a ser juzgados. Graci8as a los amigos aprendemos y crecemos. Nos ayudan a ver las cosas desde diferentes perspectivas y nos inspiran a ser mejores personas.</p>
+                
+                <table id="tabla_2" class="tabla_dos">
+                    <thead>
+                        <tr>
+                            <th style="width:200px;">Nombre</th>
+                            <th style="text-align: center; width:100px;">Edad</th>
+                            <th style="width:200px;">Teléfono</th>
+                            <th style="width:100px;">Inicio de amistad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sara Victoria Juárez Arroyo</td>
+                            <td style="text-align: center; padding:0px;">21</td>
+                            <td>222252621</td>
+                            <td class="celda_centrada" style="text-align: center;
+                padding: 0px;" s>2019</td>
+                        </tr>
+                        <tr>
+                            <td>Jael Mitl Chapul</td>
+                            <td style="text-align: center; padding:0px;">21</td>
+                            <td>2224156859</td>
+                            <td class="celda_centrada" style="text-align: center;
+                padding: 0px;" >2019</td>
+                        </tr>
+                        <tr>
+                            <td>Alejandra Yañez Lara</td>
+                            <td style="text-align: center; padding:0px;">22</td>
+                            <td>2226765938</td>
+                            <td class="celda_centrada" style="text-align: center;
+                padding: 0px;" >2021</td>
+                        </tr>
+                        <tr>
+                            <td>Ximena Edith Valero Maya</td>
+                            <td style="text-align: center; padding:0px;">23</td>
+                            <td>2224251648</td>
+                            <td class="celda_centrada" style="text-align: center;
+                padding: 0px;;" >2021</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Brenda Hernández Reséndiz</td>
+                           <td style="text-align: center; padding:0px;">21</td>
+                            <td>2226765938</td>
+                            <td class="celda_centrada" style="text-align: center;
+                padding: 0px;;" >2014</td>
+                        </tr>
+                    </tfoot>
+                
+                </table>
+            </section>
+            
+            <section style="overflow-x: auto">
+                <h2>Tablas</h2>
+                <p>Metus facilisis mi vehicula risus gravida urna luctus. Rhoncus iaculis purus tristique sapien purus. Quisque lacus taciti maximus netus euismod pulvinar turpis aliquet. Nam dui elementum aptent condimentum magna per porttitor felis? Laoreet ex euismod neque fusce lectus. Nunc elementum conubia cursus dolor urna dolor. Luctus rhoncus dapibus mollis hendrerit elit tempus. Id quam per curae nulla tortor suscipit vel.</p>
+                <table id="tabla_zebra">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Deporte</th>
+                            <th>Teléfono</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lourdes Días Salamanca</td>
+                            <td>19</td>
+                            <td>Football</td>
+                            <td>2226154879</td>
+                            <td>lulu_dias@gmail.com</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Jose Luis Pérez Dominguez</td>
+                            <td>21</td>
+                            <td>Voleiball</td>
+                            <td>2224251849</td>
+                            <td>guicho_21@hotmail.com</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Pablo Méndez Cabrera</td>
+                            <td>19</td>
+                            <td>Football</td>
+                            <td>2225161487</td>
+                            <td>pablo_start@gmail.com</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Mariana Gonzáles Gonzáles</td>
+                            <td>20</td>
+                            <td>Natación</td>
+                            <td>2225164895</td>
+                            <td>mariana.gonzales@gmail.com</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Graciela Hernández Pérez</td>
+                            <td>21</td>
+                            <td>2225164875</td>
+                            <td>Karate</td>
+                            <td>grace_linda@yahoo.com</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>José Fernández Jiménez</td>
+                            <td>20</td>
+                            <td>Football</td>
+                            <td>2225595654</td>
+                            <td>pepe.fer@gmail.com</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Monserrat Camacho Gómez</td>
+                            <td>21</td>
+                            <td>Karate</td>
+                            <td>2226154898</td>
+                            <td>monse_camacho@gmail.com</td>
+                            
+                        </tr>
+                    
+                    
+                    </tbody>
+                
+                </table>
+                
+                
+                    <td></td>
+            </section>
+            <section style="overflow-x: auto">
+                <h2>Tablas</h2>
+                <p>Metus facilisis mi vehicula risus gravida urna luctus. Rhoncus iaculis purus tristique sapien purus. Quisque lacus taciti maximus netus euismod pulvinar turpis aliquet. Nam dui elementum aptent condimentum magna per porttitor felis? Laoreet ex euismod neque fusce lectus. Nunc elementum conubia cursus dolor urna dolor. Luctus rhoncus dapibus mollis hendrerit elit tempus. Id quam per curae nulla tortor suscipit vel.</p>
+                <table class="tabla_hover">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Deporte</th>
+                            <th>Teléfono</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lourdes Días Salamanca</td>
+                            <td>19</td>
+                            <td>Football</td>
+                            <td>2226154879</td>
+                            <td>lulu_dias@gmail.com</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Jose Luis Pérez Dominguez</td>
+                            <td>21</td>
+                            <td>Voleiball</td>
+                            <td>2224251849</td>
+                            <td>guicho_21@hotmail.com</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Pablo Méndez Cabrera</td>
+                            <td>19</td>
+                            <td>Football</td>
+                            <td>2225161487</td>
+                            <td>pablo_start@gmail.com</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Mariana Gonzáles Gonzáles</td>
+                            <td>20</td>
+                            <td>Natación</td>
+                            <td>2225164895</td>
+                            <td>mariana.gonzales@gmail.com</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Graciela Hernández Pérez</td>
+                            <td>21</td>
+                            <td>2225164875</td>
+                            <td>Karate</td>
+                            <td>grace_linda@yahoo.com</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>José Fernández Jiménez</td>
+                            <td>20</td>
+                            <td>Football</td>
+                            <td>2225595654</td>
+                            <td>pepe.fer@gmail.com</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Monserrat Camacho Gómez</td>
+                            <td>21</td>
+                            <td>Karate</td>
+                            <td>2226154898</td>
+                            <td>monse_camacho@gmail.com</td>
+                            
+                        </tr>
+                    
+                    
+                    </tbody>
+                
+                </table>
+                
+                
+                    <td></td>
+            </section>
+        </main>
+    </body>
+
+</html>
